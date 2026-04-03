@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import OurProducts from "./components/OurProducts";
 import Certificates from "./components/Certificates";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
       <section id="certificates">
         <Certificates />
       </section>
+
+         <section id="certificates">
+        <Contact />
+      </section>
+
 
       <section id="contact">
         <Footer />
