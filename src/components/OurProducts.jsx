@@ -24,7 +24,8 @@ const products = [
 ];
 
 const OurProducts = () => {
-  return (
+
+ return (
     <div className="bg-gray-100 py-16 px-6">
 
       {/* TITLE */}
