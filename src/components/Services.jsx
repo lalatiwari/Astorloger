@@ -7,55 +7,55 @@ const services = [
     title: "Palmistry",
     hindi: "हस्त रेखा शास्त्र",
     img: "/services/palmistry.jpg",
-    desc: "I deeply analyze the subtle lines of your palm to guide your future."
+    desc: "Palmistry is the ancient art of reading the lines and mounts of your palm to understand your personality, strengths, and life path. Through detailed hand analysis, we identify career opportunities, relationship patterns, and financial prospects. It also reveals hidden talents and upcoming challenges. Get clear direction and practical guidance for a successful future."
   },
   {
     title: "Muhurt",
     hindi: "मुहूर्त",
     img: "/services/muhurt.jpg",
-    desc: "Right timing is the key to success. Get auspicious timings."
+    desc: "Right timing is the keChoosing the right Muhurt ensures success and positivity in important life events. Whether it is marriage, business launch, housewarming, or any special occasion, selecting an auspicious time removes obstacles. Proper planetary alignment increases the chances of growth and prosperity. Make every important step in life at the perfect moment."
   },
   {
     title: "Health",
     hindi: "स्वास्थ्य",
     img: "/services/health.jpg",
-    desc: "Astrological remedies to improve health and remove negative effects."
+    desc: "Astrological health analysis helps identify planetary influences affecting physical and mental well-being. By studying your birth chart, we understand possible health concerns and preventive measures. Personalized remedies are suggested to reduce negative energies. Achieve balance, vitality, and long-term wellness through spiritual guidance."
   },
   {
     title: "Finance Problem",
     hindi: "आर्थिक समस्या",
     img: "/services/finance.jpg",
-    desc: "Solve financial problems with expert astrological guidance."
+    desc: "Financial challenges can often be connected to planetary positions in your birth chart. Through detailed horoscope analysis, we identify the root causes of income instability or losses. Practical remedies and timing guidance are provided to improve wealth flow. Build financial stability and long-term prosperity with expert advice."
   },
   {
     title: "Education And Job",
     hindi: "शिक्षा और नौकरी",
     img: "/services/education.jpg",
-    desc: "Get success in career and education with proper guidance."
+    desc: "Career and education guidance is provided through in-depth horoscope study. Discover the most suitable field, career timing, and growth opportunities based on planetary strength. Overcome obstacles related to exams, promotions, or job changes. Move confidently toward professional success with accurate astrological insights."
   },
   {
     title: "Vastu Sastra",
     hindi: "वास्तु शास्त्र",
     img: "/services/vastu.jpg",
-    desc: "Improve home and office energy with vastu consultation."
+    desc: "Santan Yog consultation helps understand planetary influences related to childbirth and family growth. Detailed horoscope analysis reveals possible delays or challenges. Personalized remedies are suggested to strengthen positive planetary effects. Receive spiritual guidance and blessings for a happy and complete family life."
   },
   {
     title: "Santan Yog",
     hindi: "संतान योग",
     img: "/services/santan.jpg",
-    desc: "Guidance for child-related issues and remedies."
+    desc: "Santan Yog consultation helps understand planetary influences related to childbirth and family growth. Detailed horoscope analysis reveals possible delays or challenges. Personalized remedies are suggested to strengthen positive planetary effects. Receive spiritual guidance and blessings for a happy and complete family life."
   },
   {
     title: "Gemstone",
     hindi: "रत्न शास्त्र",
     img: "/services/gemstone.jpg",
-    desc: "Right gemstones can change your destiny."
+    desc: "Gemstones are powerful tools that strengthen beneficial planets in your birth chart. After proper astrological analysis, the right gemstone is recommended for you. Wearing suitable gemstones can improve confidence, health, relationships, and financial growth. Experience positive transformation through scientifically selected stones."
   },
   {
     title: "Marriage",
     hindi: "विवाह",
     img: "/services/marriage.jpg",
-    desc: "Marriage related problems and solutions."
+    desc: "Marriage consultation provides deep insights into compatibility and relationship harmony. Kundli matching helps identify strengths and possible challenges between partners. Remedies are suggested to reduce conflicts and enhance understanding. Build a stable, loving, and prosperous married life with proper astrological guidance."
   }
 ];
 
