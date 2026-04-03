@@ -2,62 +2,91 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="py-20 px-6 bg-gray-100">
+    <section className="py-24 px-6 bg-gradient-to-b from-gray-100 to-white">
 
-      {/* TOP HEADING */}
-      <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-14">
-        About Us
-      </h2>
+      {/* ===== Heading ===== */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+          About Us
+        </h2>
+        <div className="w-16 h-1 bg-red-500 mx-auto mt-3 rounded"></div>
+      </div>
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-stretch">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-        {/* LEFT SECTION */}
-        <div className="flex flex-col justify-between h-full text-left">
+        {/* ===== LEFT CONTENT ===== */}
+        <div>
 
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-              Astrologer Pragya Sharma – Gold Medalist
-            </h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-snug">
+            Astrologer Pragya Sharma <br />
+            <span className="text-red-500">Gold Medalist</span>
+          </h2>
 
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Jyotisha, or Vedic astrology, is one of the most ancient and respected systems of spiritual science that originated from the sacred Vedas. It is based on the belief that planetary positions at the exact time of birth shape a person’s personality, strengths, challenges, and overall life journey.
-            </p>
+          <p className="text-gray-600 mb-4 leading-relaxed">
+            Jyotisha, or Vedic astrology, is one of the most ancient and respected systems of spiritual science that originated from the sacred Vedas. It helps understand life through planetary positions.
+          </p>
 
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Vedic astrology studies the nine major celestial bodies — Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu. By analyzing their placements in zodiac signs, houses, nakshatras, and dasha periods, it provides meaningful insights into career, marriage, finances, health, and important life events.
-            </p>
+          <p className="text-gray-600 mb-4 leading-relaxed">
+            By analyzing planets like Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu, astrology provides deep insights into career, marriage, finances, and life events.
+          </p>
 
-            <p className="text-gray-600 mb-4 leading-relaxed">
-              Astrologer Pragya Sharma combines traditional Vedic wisdom with practical modern understanding. She has guided many individuals in overcoming life challenges through accurate predictions and personalized consultation.
-            </p>
+          <p className="text-gray-600 mb-6 leading-relaxed">
+            Astrologer Pragya Sharma blends traditional Vedic knowledge with modern understanding, helping individuals solve problems and achieve success through accurate predictions.
+          </p>
 
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Along with predictions, she suggests effective remedies such as mantras, gemstones, and spiritual rituals to reduce negative influences and enhance positive energies, bringing peace, prosperity, and balance in life.
-            </p>
+          {/* Features / Highlights */}
+          <div className="grid grid-cols-2 gap-4 mb-8 text-sm">
+            <div className="flex items-center gap-2">
+              <span className="text-green-500">✔</span> Accurate Predictions
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green-500">✔</span> Personal Consultation
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green-500">✔</span> Vedic Remedies
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-green-500">✔</span> Trusted Guidance
+            </div>
           </div>
 
-          {/* CALL BUTTON */}
-          <a
-            href="tel:+919452884067"
-            className="inline-block bg-red-500 text-white px-6 py-3 rounded shadow hover:bg-red-600 transition w-fit mt-6"
-          >
-            📞 9452884067
-          </a>
+          {/* CTA Buttons */}
+          <div className="flex gap-4">
+            <a
+              href="tel:+919452884067"
+              className="bg-red-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-red-700 hover:shadow-lg transition"
+            >
+              📞 Call Now
+            </a>
+
+            <a
+              href="#contact"
+              className="border border-red-500 text-red-500 px-6 py-3 rounded-full hover:bg-red-500 hover:text-white transition"
+            >
+              Book Consultation
+            </a>
+          </div>
 
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="flex justify-center">
+        {/* ===== RIGHT IMAGE ===== */}
+        <div className="relative flex justify-center">
+
+          {/* Glow Effect */}
+          <div className="absolute w-full h-full bg-gradient-to-tr from-red-500/20 to-yellow-400/20 rounded-2xl blur-2xl"></div>
+
+          {/* Image */}
           <img
             src="/services/about.jpg"
             alt="Astrologer Pragya Sharma"
-            className="w-full max-w-md h-full object-cover rounded-lg border-4 border-yellow-400 shadow-lg"
+            className="relative w-full max-w-md rounded-2xl shadow-2xl border-4 border-yellow-400 object-cover"
           />
+
         </div>
 
       </div>
 
-    </div>
+    </section>
   );
 };
 

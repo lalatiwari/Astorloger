@@ -1,93 +1,96 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 export default function HeroSlider() {
   return (
     <div className="w-full">
 
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay, EffectFade]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
+        effect="fade"
         loop={true}
-        className="h-[350px] md:h-[450px]"  // 👈 Height reduced here
+        className="h-[400px] md:h-[550px]"
       >
-        
-        {/* Slide 1 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src="/services/slider1.jpg"
-              alt="slider1"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
-        </SwiperSlide>
 
-        {/* Slide 2 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src="/services/slider2.jpg"
-              alt="slider2"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
-        </SwiperSlide>
+        {/* Slides */}
+        {[
+          "/services/slider1.jpg",
+          "/services/slider2.jpg",
+          "/services/slider3.jpg",
+          "/services/slider4.jpg",
+        ].map((img, index) => (
+          <SwiperSlide key={index}>
+            <div className="relative w-full h-full group">
 
-        {/* Slide 3 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src="/services/slider3.jpg"
-              alt="slider3"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
-        </SwiperSlide>
+              {/* Image */}
+              <img
+                src={img}
+                alt="slider"
+                className="w-full h-full object-cover object-center scale-105 group-hover:scale-110 transition duration-[4000ms]"
+              />
 
-        
-        {/* Slide 3 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src="/services/slider3.jpg"
-              alt="slider3"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
-        </SwiperSlide>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
 
-        
-        {/* Slide 4 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src="/services/slider4.jpg"
-              alt="slider4"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
-        </SwiperSlide>
+              {/* Content */}
+              <div className="absolute inset-0 flex flex-col justify-center items-start px-6 md:px-20 text-white">
 
-        
-        {/* Slide 3 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src="/services/slider3.jpg"
-              alt="slider3"
-              className="w-full h-full object-cover object-bottom"
-            />
-          </div>
-        </SwiperSlide>
+                <h1 className="text-2xl md:text-5xl font-bold mb-4 leading-tight animate-fadeIn">
+                  Discover Your Destiny <br />
+                  With Vedic Astrology
+                </h1>
+
+                <p className="text-sm md:text-lg mb-6 max-w-xl text-gray-200">
+                  Get accurate predictions and solutions from expert astrologer.
+                </p>
+
+                <button className="bg-red-600 px-6 py-3 rounded-full hover:bg-red-700 transition shadow-lg hover:scale-105">
+                  Book Consultation
+                </button>
+              </div>
+
+            </div>
+          </SwiperSlide>
+        ))}
 
       </Swiper>
+
+      {/* Custom Styling */}
+      <style>
+        {`
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: white;
+          background: rgba(255,255,255,0.2);
+          backdrop-filter: blur(6px);
+          padding: 20px;
+          border-radius: 50%;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+          background: rgba(255,255,255,0.4);
+        }
+
+        .swiper-pagination-bullet {
+          background: #ccc;
+          opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #ef4444;
+          transform: scale(1.2);
+        }
+        `}
+      </style>
 
     </div>
   );
