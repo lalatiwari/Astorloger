@@ -1,6 +1,16 @@
 import React from "react";
 
 const Footer = () => {
+  const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+
+
+
   return (
     <footer className="bg-gradient-to-r from-[#1a0000] via-[#2b0000] to-[#000000] text-white">
 
@@ -10,7 +20,7 @@ const Footer = () => {
         {/* Column 1 - Logo & About */}
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <img src="/products/logo.png" alt="logo" className="w-14" />
+            <img src="/products/logo.png" alt="logo" className="w-24 h-auto object-contain mt-1" />
             <div>
               <h2 className="text-lg font-semibold">
                प्रज्ञा ज्योतिष संस्थान
@@ -19,7 +29,7 @@ const Footer = () => {
                 Astrologer Pragya Sharma
               </p>
               <span className="bg-orange-500 text-white text-xs px-2 py-1 inline-block mt-1 rounded">
-                Gold Medalist - BHU - Varanasi
+                Gold Medalist - Vedik Astrology - Indore
               </span>
             </div>
           </div>
@@ -33,23 +43,46 @@ const Footer = () => {
 
           <div className="grid grid-cols-2 gap-2 text-sm mt-4">
             <ul className="space-y-2">
-              <li className="hover:text-red-500 cursor-pointer">Home</li>
-              <li className="hover:text-red-500 cursor-pointer">About Us</li>
-              <li className="hover:text-red-500 cursor-pointer">Our Service</li>
-              <li className="hover:text-red-500 cursor-pointer">Gallery</li>
-              <li className="hover:text-red-500 cursor-pointer">Contact Us</li>
-            </ul>
+              <li onClick={() => scrollToSection("home")} className="cursor-pointer hover:text-orange-400">
+  Home
+</li>
+
+<li onClick={() => scrollToSection("about")} className="cursor-pointer hover:text-orange-400">
+  About Us
+</li>
+
+<li onClick={() => scrollToSection("services")} className="cursor-pointer hover:text-orange-400">
+  Our Service
+</li>
+
+<li onClick={() => scrollToSection("Our Products")} className="cursor-pointer hover:text-orange-400">
+  Our Products
+</li>
+
+<li onClick={() => scrollToSection("contact")} className="cursor-pointer hover:text-orange-400">
+  Contact Us
+</li>            </ul>
 
             <ul className="space-y-2">
-              <li className="hover:text-red-500 cursor-pointer">Palmistry</li>
-              <li className="hover:text-red-500 cursor-pointer">Muhurt</li>
-              <li className="hover:text-red-500 cursor-pointer">Health</li>
-              <li className="hover:text-red-500 cursor-pointer">
-                Education and Job
-              </li>
-              <li className="hover:text-red-500 cursor-pointer">
-                Vastu Sastra
-              </li>
+              <li onClick={() => scrollToSection("services")} className="cursor-pointer">
+  Palmistry
+</li>
+
+<li onClick={() => scrollToSection("services")} className="cursor-pointer">
+  Muhurt
+</li>
+
+<li onClick={() => scrollToSection("services")} className="cursor-pointer">
+  Health
+</li>
+
+<li onClick={() => scrollToSection("services")} className="cursor-pointer">
+  Education and Job
+</li>
+
+<li onClick={() => scrollToSection("services")} className="cursor-pointer">
+  Vastu Sastra
+</li>
             </ul>
           </div>
         </div>
@@ -64,7 +97,7 @@ const Footer = () => {
             <li className="flex items-start space-x-2">
               <i className="fa-solid fa-house mt-1 text-red-500"></i>
               <span>
-                Banaras Hindu University, Varanasi, Uttar Pradesh - 221005
+                Institute of Vedic Astrology, Indore
               </span>
             </li>
 
@@ -88,9 +121,9 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="bg-black text-center py-4 text-sm border-t border-gray-800">
-        Copyright © 2026 Ganapati Jyotish Sodh Sadan Powered By{" "}
+        {/* Copyright © 2026 Ganapati Jyotish Sodh Sadan Powered By{" "} */}
         <span className="text-yellow-400 font-semibold">
-          Quartz Technologies
+          {/* Quartz Technologies */}
         </span>
       </div>
 
