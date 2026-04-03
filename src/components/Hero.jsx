@@ -15,7 +15,7 @@ export default function HeroSlider() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop={true}
-        className="h-[400px] md:h-[500px]"  // 👈 Height reduced here
+        className="h-[350px] md:h-[450px]"  // 👈 Height reduced here
       >
         
         {/* Slide 1 */}
