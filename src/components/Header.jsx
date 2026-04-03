@@ -16,23 +16,28 @@ export default function Header() {
 
       {/* ===== Top Header ===== */}
       <div className="bg-gray-100 py-3">
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 flex justify-between items-start">
 
           {/* Logo Section */}
-          <div className="flex items-center space-x-3 cursor-pointer"
-               onClick={() => scrollToSection("home")}>
+          <div
+            className="flex items-start space-x-3 cursor-pointer"
+            onClick={() => scrollToSection("home")}
+          >
             <img
               src="/products/logo.png"
               alt="logo"
-              className="w-20 h-14 object-contain"
+              className="w-24 h-auto object-contain mt-1"
             />
-            <div>
+
+            <div className="leading-tight">
               <h2 className="text-lg font-semibold">
                 प्रज्ञा ज्योतिष संस्थान
               </h2>
+
               <p className="text-red-600 font-semibold text-sm">
                 Astrologer Pragya Sharma
               </p>
+
               <span className="bg-orange-500 text-white text-xs px-2 py-1 inline-block mt-1 rounded">
                 Gold Medalist - BHU - Varanasi
               </span>
@@ -93,7 +98,7 @@ export default function Header() {
               Our Service
             </li>
             <li onClick={() => scrollToSection("products")} className="cursor-pointer hover:text-red-500">
-              OurProducts
+              Our Products
             </li>
             <li onClick={() => scrollToSection("certificates")} className="cursor-pointer hover:text-red-500">
               Certificates
@@ -125,7 +130,7 @@ export default function Header() {
                 Our Service
               </li>
               <li onClick={() => scrollToSection("products")} className="cursor-pointer">
-                OurProducts
+                Our Products
               </li>
               <li onClick={() => scrollToSection("certificates")} className="cursor-pointer">
                 Certificates
