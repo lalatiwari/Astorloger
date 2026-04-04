@@ -1,4 +1,4 @@
- import React from "react";
+import React, { useState } from "react";
 
 const certificates = [
   {
@@ -20,35 +20,42 @@ const certificates = [
 ];
 
 const Certificates = () => {
+  const [activeImg, setActiveImg] = useState(null);
+
   return (
-    <div className="bg-white py-16 px-6">
+    <section className="bg-gradient-to-b from-white to-gray-100 py-20 px-6">
 
-      {/* TITLE */}
-      <h2 className="text-center text-3xl font-bold mb-12">
-        Achievements & Certificates
-      </h2>
+      {/* ===== Heading ===== */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+          Achievements & Certificates
+        </h2>
+        <div className="w-16 h-1 bg-red-500 mx-auto mt-3 rounded"></div>
+      </div>
 
-      {/* GRID */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      {/* ===== Grid ===== */}
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
         {certificates.map((item, index) => (
           <div
             key={index}
-            className="group bg-gray-100 rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl"
+            onClick={() => setActiveImg(item.img)}
+            className="group relative cursor-pointer rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500"
           >
 
-            {/* IMAGE AREA */}
-            <div className="h-64 w-full flex items-center justify-center bg-gray-200 overflow-hidden">
-              <img
-                src={item.img}
-                alt={item.title}
-                className="max-h-full max-w-full object-contain transition duration-500 group-hover:scale-105"
-              />
-            </div>
+            {/* Image */}
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+            />
 
-            {/* TEXT */}
-            <div className="p-4 text-center bg-white">
-              <p className="text-sm font-semibold text-gray-800 group-hover:text-red-500 transition">
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition"></div>
+
+            {/* Title */}
+            <div className="absolute bottom-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-white text-sm font-semibold text-center">
                 {item.title}
               </p>
             </div>
@@ -58,7 +65,21 @@ const Certificates = () => {
 
       </div>
 
-    </div>
+      {/* ===== Modal (Full View) ===== */}
+      {activeImg && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setActiveImg(null)}
+        >
+          <img
+            src={activeImg}
+            alt="certificate"
+            className="max-w-[90%] max-h-[90%] rounded-xl shadow-2xl"
+          />
+        </div>
+      )}
+
+    </section>
   );
 };
 

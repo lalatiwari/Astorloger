@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Contact = () => {
-
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -45,106 +44,148 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-100 py-16 px-6">
+    <section className="bg-gradient-to-b from-gray-100 to-white py-20 px-6">
 
-      {/* ✅ TOP HEADING */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+      {/* ===== Heading ===== */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
           Contact Us
         </h2>
+        <div className="w-16 h-1 bg-red-500 mx-auto mt-3 rounded"></div>
       </div>
 
-      {/* FORM + CONTACT */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+      {/* ===== Main Grid ===== */}
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-        {/* FORM */}
-        <div className="bg-pink-200 p-6 rounded shadow-md">
-          <h3 className="text-xl font-bold mb-4 text-center">
+        {/* ===== LEFT: CONTACT INFO ===== */}
+        <div className="space-y-6">
+
+          <h3 className="text-2xl font-bold text-gray-800">
+            Get In Touch With Expert Astrologer
+          </h3>
+
+          <p className="text-gray-600">
+            Talk directly with astrologer and get solutions for your life problems instantly.
+          </p>
+
+          {/* Contact Cards */}
+          <div className="space-y-4">
+
+            <a
+              href="https://wa.me/919452884067"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-green-500 text-white p-4 rounded-xl shadow hover:scale-105 transition"
+            >
+              <span className="text-xl">💬</span>
+              <div>
+                <p className="font-semibold">WhatsApp</p>
+                <p className="text-sm">+91 9452884067</p>
+              </div>
+            </a>
+
+            <a
+              href="tel:+919452884067"
+              className="flex items-center gap-4 bg-red-500 text-white p-4 rounded-xl shadow hover:scale-105 transition"
+            >
+              <span className="text-xl">📞</span>
+              <div>
+                <p className="font-semibold">Call Us</p>
+                <p className="text-sm">+91 9452884067</p>
+              </div>
+            </a>
+
+            <div className="flex items-center gap-4 bg-black text-white p-4 rounded-xl shadow">
+              <span className="text-xl">📍</span>
+              <div>
+                <p className="font-semibold">Location</p>
+                <p className="text-sm">Indore, India</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* ===== RIGHT: FORM ===== */}
+        <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border">
+
+          <h3 className="text-xl font-bold mb-6 text-center">
             Enquire Now
           </h3>
 
-          <form onSubmit={handleSubmit} className="space-y-3">
+          <form onSubmit={handleSubmit} className="space-y-4">
 
             <input
               type="text"
               name="name"
-              placeholder="Name*"
+              placeholder="Your Name *"
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-red-400 outline-none"
             />
 
             <input
               type="text"
               name="phone"
-              placeholder="Phone*"
+              placeholder="Phone Number *"
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-red-400 outline-none"
             />
 
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email Address"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-400"
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-red-400 outline-none"
             />
 
             <button
               type="submit"
               disabled={loading}
-              className={`w-full py-2 text-white rounded transition ${
+              className={`w-full py-3 text-white rounded-full font-semibold transition ${
                 loading
                   ? "bg-gray-400 cursor-not-allowed"
-                  : "bg-black hover:bg-red-600"
+                  : "bg-gradient-to-r from-red-500 to-orange-500 hover:scale-105"
               }`}
             >
               {loading ? "Submitting..." : "Submit Now"}
             </button>
 
           </form>
-        </div>
 
-        {/* CONTACT */}
-        <div className="bg-white p-6 rounded shadow text-center">
-          <h3 className="text-lg font-semibold mb-4">
-            Any Help We're Always Here
-          </h3>
-
-          <div className="bg-green-600 text-white py-3 mb-3 rounded">
-            WhatsApp: +91-9452884067
-          </div>
-
-          <div className="bg-red-500 text-white py-3 rounded">
-            Call: +91-9452884067
-          </div>
         </div>
 
       </div>
 
-      {/* CTA */}
-      <div className="max-w-7xl mx-auto mt-12">
-        <div className="bg-gradient-to-r from-orange-400 to-red-600 text-white p-10 rounded-lg text-center">
+      {/* ===== Bottom CTA ===== */}
+      <div className="max-w-6xl mx-auto mt-20 text-center">
+        <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white p-10 rounded-2xl shadow-xl">
 
           <h2 className="text-xl md:text-2xl font-semibold mb-4">
-            We can solve all types of problems for you without a birth chart.
+            We Solve All Life Problems With Astrology
           </h2>
 
-          <div className="flex flex-col items-center mt-4">
-            <span className="text-sm mb-1">Need Any Help?</span>
-            <div className="text-lg font-bold">
-              📞 +91-9452884067
-            </div>
-          </div>
+          <p className="mb-6 text-sm">
+            Get instant solutions without waiting
+          </p>
+
+          <a
+            href="tel:+919452884067"
+            className="bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:scale-105 transition inline-block"
+          >
+            📞 Call Now
+          </a>
 
         </div>
       </div>
 
-    </div>
+    </section>
   );
 };
 
