@@ -126,7 +126,7 @@ const Footer = () => {
                 <i className="fa-solid fa-envelope text-blue-400 group-hover:text-white"></i>
               </div>
               <span className="group-hover:text-white transition">
-                info@varanasiastrloger.com
+                info@bhagyarekha.co.in
               </span>
             </li>
 
@@ -135,7 +135,7 @@ const Footer = () => {
                 <i className="fa-solid fa-globe text-purple-400 group-hover:text-white"></i>
               </div>
               <span className="group-hover:text-white transition">
-                www.varanasiastrloger.com
+                https://astorloger.vercel.app/
               </span>
             </li>
 
