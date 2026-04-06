@@ -53,7 +53,7 @@ const About = () => {
           {/* CTA Buttons */}
           <div className="flex gap-4">
             <a
-              href="tel:+919452884067"
+              href="tel:+917974437701"
               className="bg-red-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-red-700 hover:shadow-lg transition"
             >
               📞 Call Now

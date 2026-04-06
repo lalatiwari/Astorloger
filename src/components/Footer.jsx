@@ -116,7 +116,7 @@ const Footer = () => {
                 <i className="fa-solid fa-phone text-green-400 group-hover:text-white"></i>
               </div>
               <span className="group-hover:text-white transition">
-                +91-9452884067
+                +91-7974437701
               </span>
             </li>
 

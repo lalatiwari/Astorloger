@@ -124,7 +124,7 @@ export default function Header() {
           {/* Phone */}
           <div className="hidden md:flex items-center space-x-2 text-white font-medium">
             <i className="fa-solid fa-phone text-red-500"></i>
-            <span>09452884067</span>
+            <span>07974437701</span>
           </div>
         </div>
 
@@ -151,7 +151,7 @@ export default function Header() {
 
               <li className="flex items-center space-x-2 pt-3 border-t border-gray-700">
                 <i className="fa-solid fa-phone text-red-500"></i>
-                <span>09452884067</span>
+                <span>07974437701</span>
               </li>
             </ul>
           </div>

@@ -98,7 +98,7 @@ const OurProducts = () => {
           </p>
 
           <a
-            href="tel:+919452884067"
+            href="tel:+917974437701"
             className="bg-white text-red-600 px-6 py-3 rounded-full font-semibold hover:scale-105 transition inline-block"
           >
             📞 Call Now
