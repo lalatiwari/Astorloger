@@ -73,22 +73,23 @@ const Footer = () => {
             </ul>
 
             <ul className="space-y-3">
-              {[
-                "Palmistry",
-                "Muhurt",
-                "Health",
-                "Education and Job",
-                "Vastu Shastra",
-              ].map((item, index) => (
-                <li
-                  key={index}
-                  className="cursor-pointer flex items-center gap-2 group hover:text-red-400 transition"
-                >
-                  <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:scale-125 transition"></span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+  {[
+    ["Palmistry", "services"],
+    ["Muhurt", "services"],
+    ["Health", "services"],
+    ["Education and Job", "services"],
+    ["Vastu Shastra", "services"],
+  ].map(([label, id], index) => (
+    <li
+      key={index}
+      onClick={() => scrollToSection(id)}
+      className="cursor-pointer flex items-center gap-2 group hover:text-red-400 transition"
+    >
+      <span className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:scale-125 transition"></span>
+      {label}
+    </li>
+  ))}
+</ul>
 
           </div>
         </div>
