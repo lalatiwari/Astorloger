@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import OurProducts from "./components/OurProducts";
 import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
+import TrustSection from "./components/TrustSection";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <section id="home">
         <Hero />
       </section>
+
+      <TrustSection />
 
       <PopupForm />
 
