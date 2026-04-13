@@ -22,9 +22,9 @@ export default function HeroSlider() {
 
         {/* Slides */}
         {[
-          "/services/slider1.jpg",
+          "/services/slider5.PNG",
           "/services/slider2.jpg",
-          "/services/slider3.jpg",
+          "/services/slider6.PNG",
           "/services/slider4.jpg",
         ].map((img, index) => (
           <SwiperSlide key={index}>
