@@ -6,55 +6,55 @@ const services = [
   {
     title: "Palmistry",
     hindi: "हस्त रेखा शास्त्र",
-    img: "/services/palmistry.jpg",
+    img: "/services/image1.PNG",
     desc: "Understand your life path, personality, and future through detailed palm analysis."
   },
   {
     title: "Muhurt",
     hindi: "मुहूर्त",
-    img: "/services/muhurt.jpg",
+    img: "/services/image2.PNG",
     desc: "Choose the most auspicious time for success in important life events."
   },
   {
     title: "Health",
     hindi: "स्वास्थ्य",
-    img: "/services/health.jpg",
+    img: "/services/image3.PNG",
     desc: "Identify health issues and improve well-being with astrological remedies."
   },
   {
     title: "Finance Problem",
     hindi: "आर्थिक समस्या",
-    img: "/services/finance.jpg",
+    img: "/services/image4.PNG",
     desc: "Solve financial instability and improve wealth with expert guidance."
   },
   {
     title: "Education & Job",
     hindi: "शिक्षा और नौकरी",
-    img: "/services/education.jpg",
+    img: "/services/image5.PNG",
     desc: "Get clarity in career decisions and professional growth."
   },
   {
     title: "Vastu Shastra",
     hindi: "वास्तु शास्त्र",
-    img: "/services/vastu.jpg",
+    img: "/services/image6.PNG",
     desc: "Balance your home and workplace energies for success and peace."
   },
   {
     title: "Santan Yog",
     hindi: "संतान योग",
-    img: "/services/santan.jpg",
+    img: "/services/image7.PNG",
     desc: "Get guidance for childbirth and family happiness through astrology."
   },
   {
     title: "Gemstone",
     hindi: "रत्न शास्त्र",
-    img: "/services/gemstone.jpg",
+    img: "/services/image8.PNG",
     desc: "Strengthen planets and improve life using the right gemstones."
   },
   {
     title: "Marriage",
     hindi: "विवाह",
-    img: "/services/marriage.jpg",
+    img: "/services/image9.PNG",
     desc: "Get compatibility insights and build a happy married life."
   }
 ];
@@ -121,7 +121,7 @@ const Services = () => {
             {/* Content */}
             <div className="p-5">
 
-              <p className="text-orange-500 text-sm font-medium mb-2">
+              <p className="text-red-600 text-sm font-semibold mb-2">
                 {item.hindi}
               </p>
 
