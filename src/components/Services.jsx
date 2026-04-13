@@ -6,55 +6,55 @@ const services = [
   {
     title: "Palmistry",
     hindi: "हस्त रेखा शास्त्र",
-    img: "/services/image1.PNG",
+    img: "/services/image1.jpeg",
     desc: "Understand your life path, personality, and future through detailed palm analysis."
   },
   {
     title: "Muhurt",
     hindi: "मुहूर्त",
-    img: "/services/image2.PNG",
+    img: "/services/image2.jpeg",
     desc: "Choose the most auspicious time for success in important life events."
   },
   {
     title: "Health",
     hindi: "स्वास्थ्य",
-    img: "/services/image3.PNG",
+    img: "/services/health.jpg",
     desc: "Identify health issues and improve well-being with astrological remedies."
   },
   {
     title: "Finance Problem",
     hindi: "आर्थिक समस्या",
-    img: "/services/image4.PNG",
+    img: "/services/image4.jpeg",
     desc: "Solve financial instability and improve wealth with expert guidance."
   },
   {
     title: "Education & Job",
     hindi: "शिक्षा और नौकरी",
-    img: "/services/image5.PNG",
+    img: "/services/image5.jpeg",
     desc: "Get clarity in career decisions and professional growth."
   },
   {
     title: "Vastu Shastra",
     hindi: "वास्तु शास्त्र",
-    img: "/services/image6.PNG",
+    img: "/services/image6.jpeg",
     desc: "Balance your home and workplace energies for success and peace."
   },
   {
     title: "Santan Yog",
     hindi: "संतान योग",
-    img: "/services/image7.PNG",
+    img: "/services/image7.jpeg",
     desc: "Get guidance for childbirth and family happiness through astrology."
   },
   {
     title: "Gemstone",
     hindi: "रत्न शास्त्र",
-    img: "/services/image8.PNG",
+    img: "/services/image8.jpeg",
     desc: "Strengthen planets and improve life using the right gemstones."
   },
   {
     title: "Marriage",
     hindi: "विवाह",
-    img: "/services/image9.PNG",
+    img: "/services/image9.jpeg",
     desc: "Get compatibility insights and build a happy married life."
   }
 ];
