@@ -26,6 +26,10 @@ export default function HeroSlider() {
           "/services/slider2.jpg",
           "/services/slider6.PNG",
           "/services/slider4.jpg",
+          "/services/slider7.jpeg",
+          "/services/slider8.jpeg",
+          "/services/slider9.jpeg",
+          "/services/slider10.jpeg",
         ].map((img, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full group">
