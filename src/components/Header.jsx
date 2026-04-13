@@ -101,7 +101,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center py-4">
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 text-white text-sm font-semibold">
+          <ul className="hidden md:flex space-x-8 text-white text-lg font-semibold">
             {[
               ["Home", "home"],
               ["About Us", "about"],
