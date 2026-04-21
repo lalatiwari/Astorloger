@@ -8,7 +8,7 @@ const products = [
   },
   {
     title: "Online Consultation",
-    img: "/products/consultation.jpg",
+    // img: "/products/consultation.jpg",
     desc: "Consult directly via call or chat for personal life guidance."
   },
   {
